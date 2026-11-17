@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kavya Dhara Pravah</title>
+<link rel="icon" href="images/bird.png" type="bird/png">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { height: 100%; }
+  body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: url('images/img2.jpg') center center / cover no-repeat fixed;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    padding: 80px 24px 24px;
+    text-align: center;
+  }
+  .logo {
+    width: min(50vw, 300px);
+    height: auto;
+    margin-top: 0;
+    margin-bottom: 8px;
+    filter: drop-shadow(0 8px 24px rgba(0,0,0,0.6));
+    animation: pop 0.8s ease-out;
+  }
+  @keyframes pop {
+    from { transform: scale(0.7); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+  }
+  .label {
+    margin-top: 18px;
+    font-size: 1.6rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #FFD700;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.7);
+    cursor: pointer;
+    display: inline-block;
+    transition: transform 0.25s ease, text-shadow 0.25s ease;
+  }
+  .label:hover {
+    transform: scale(1.15);
+    text-shadow: 0 4px 16px rgba(255,215,0,0.9);
+  }
+  .frame-single {
+    width: min(40vw, 220px);
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+    display: block;
+    filter: drop-shadow(0 6px 18px rgba(0,0,0,0.5));
+    border-radius: 12px;
+  }
+  .left-block {
+    text-align: center;
+  }
+  .title {
+    font-family: 'Palatino Linotype', 'Book Antiqua', Georgia, serif;
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 3px;
+    color: #FFB347;
+    text-shadow: 0 2px 10px rgba(255,215,0,0.5);
+    margin-bottom: 24px;
+    font-style: italic;
+    cursor: pointer;
+    display: inline-block;
+    transition: transform 0.25s ease, text-shadow 0.25s ease;
+  }
+  .title:hover {
+    transform: scale(1.08);
+    text-shadow: 0 4px 16px rgba(255,179,71,0.9);
+  }
+  .group {
+    margin-bottom: 24px;
+    align-self: flex-start;
+    margin-left: 24px;
+  }
+  .group-title {
+    color: #FFB347;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+  }
+  .row {
+    display: flex;
+    gap: 24px;
+    align-self: flex-start;
+    margin-left: 24px;
+    flex-wrap: wrap;
+  }
+  .search-wrap {
+    position: fixed;
+    top: 16px;
+    right: 16px;
+    display: flex;
+    align-items: center;
+    background: rgba(0,0,0,0.6);
+    border: 1px solid #FFD700;
+    border-radius: 24px;
+    padding: 6px 12px;
+    z-index: 9999;
+  }
+  .search-icon {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+  }
+  .search-input {
+    width: 0;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #FFD700;
+    font-size: 0.95rem;
+    transition: width 0.3s ease, padding 0.3s ease;
+    padding: 0;
+  }
+  .search-wrap:hover .search-input,
+  .search-wrap:focus-within .search-input {
+    width: 180px;
+    padding-left: 8px;
+  }
+  .fb-logo {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    z-index: 9999;
+  }
+  .fb-logo img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+    transition: transform 0.2s;
+  }
+  .fb-logo:hover img { transform: scale(1.1); }
+  .ig-logo {
+    position: absolute;
+    top: 16px;
+    left: 64px;
+    z-index: 9999;
+  }
+  .ig-logo img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+    transition: transform 0.2s;
+  }
+  .ig-logo:hover img { transform: scale(1.1); }
+</style>
+</head>
+<body>
+  <a href="https://www.facebook.com/kavyadharapravah" target="_blank" class="fb-logo"><img src="images/fb.png" alt="Facebook"></a>
+<a href="https://www.instagram.com/kavya_dhara_pravah?obrf=MWllYzhvdG1laHI4Zw==" target="_blank" class="ig-logo"><img src="images/ig.png" alt="Instagram"></a>
+  <div class="search-wrap"><img src="images/search.png" alt="Search" class="search-icon"><input class="search-input" type="text" placeholder="कवि का नाम डाले"></div>
+  <img src="images/img1.png" alt="Logo" class="logo">
+  <div class="title" onclick="window.location.href='kavya.html'">Kayva Dhara Pravah</div>
+  <div class="group">
+    <div class="group-title">members of Kavya Dhara Pravah</div>
+    <div class="row">
+      <div class="left-block">
+        <img src="images/img6.jpg" alt="Payal Patel" class="frame-single">
+        <div class="label" onclick="window.location.href='patel.html'">Payal Patel</div>
+      </div>
+    </div>
+  </div>
+  <div class="group">
+    <div class="group-title">kavi</div>
+    <div class="row">
+      <div class="left-block">
+        <img src="images/img5.png" alt="Frame" class="frame-single">
+        <div class="label" onclick="window.location.href='about.html'">Payal Gaming</div>
+      </div>
+      <div class="left-block">
+        <img src="images/img8.jpg" alt="Amber" class="frame-single">
+        <div class="label" onclick="window.location.href='amber.html'">Amber</div>
+      </div>
+    </div>
+  </div>
+  <script>
+    // Randomize persons in the "kavi" group on load
+    (function() {
+      const groups = document.querySelectorAll('.group');
+      groups.forEach(g => {
+        const title = (g.querySelector('.group-title')?.textContent || '').trim().toLowerCase();
+        if (title === 'kavi') {
+          const row = g.querySelector('.row');
+          if (row) {
+            const items = Array.from(row.querySelectorAll('.left-block'));
+            for (let i = items.length - 1; i > 0; i--) {
+              const j = Math.floor(Math.random() * (i + 1));
+              [items[i], items[j]] = [items[j], items[i]];
+            }
+            items.forEach(it => row.appendChild(it));
+          }
+        }
+      });
+    })();
+    const input = document.querySelector('.search-input');
+    if (input) {
+      input.addEventListener('input', () => {
+        const q = input.value.trim().toLowerCase();
+        document.querySelectorAll('.left-block').forEach(b => {
+          const name = (b.querySelector('.label')?.textContent || '').toLowerCase();
+          const group = b.closest('.group');
+          const groupTitle = (group?.querySelector('.group-title')?.textContent || '').toLowerCase();
+          const show = !q || name.includes(q) || groupTitle.includes(q);
+          b.style.display = show ? '' : 'none';
+        });
+        document.querySelectorAll('.group').forEach(g => {
+          if (!q) { g.style.display = ''; return; }
+          const title = (g.querySelector('.group-title')?.textContent || '').toLowerCase();
+          const hasVisible = Array.from(g.querySelectorAll('.left-block')).some(b => b.style.display !== 'none');
+          g.style.display = (title.includes(q) || hasVisible) ? '' : 'none';
+        });
+        // keep logo and title always visible
+        document.querySelectorAll('.logo, .title').forEach(el => { el.style.display = ''; });
+      });
+    }
+  </script>
+</body>
+</html>
